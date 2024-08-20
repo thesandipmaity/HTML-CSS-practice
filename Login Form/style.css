@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right, #f7489f 0%, #6d0709 150%);
+}
+
+.container{
+    background: #fff;
+    max-width: 300px;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container form .title{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.container form .title::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    bottom: 3px;
+    left: 0;
+    background: linear-gradient(to right, #f7489f 0%, #6d0709 150%);
+}
+
+.container form .input-box{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border: none;
+}
+
+.container form .underline::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.container form .underline::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #f7489f 0%, #6d0709 150%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.containerform .button{
+    margin: 40px 0 20px 0;
+}
+
+.container form .input-box input[type="submit"]{
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #f7489f 0%, #6d0709 150%);
+    transition: all 1s ease;
+}
+
+.container form .input-box input[type="submit"]:hover{
+    letter-spacing: 2px;
+    background: linear-gradient(to left, #f7489f 0%, #6d0709 150%);
+}
+
+.container .option{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+.container .twitter a,
+.container .linkedin a,
+.container .github a{
+    display: block;
+    height: 35px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    
+    color: #fff;
+    line-height: 35px;
+    border-radius: 35px;
+}
+
+.container .twitter i,
+.container .linkedin i,
+.container .github i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.container .twitter a{
+    margin: 20px 0 15px 0;
+    background: linear-gradient(to left, #000 0%, #000000 150%);
+}
+
+.container .twitter a:hover{
+    background: linear-gradient(to right, #322b2b 0%, #322b2b 150%);
+}
+
+.container .linkedin a{
+    margin: 20px 0 15px 0;
+    background: linear-gradient(to left, #0077b5 0%, #0077b5 150%);
+}
+
+.container .linkedin a:hover{
+    margin: 20px 0 15px 0;
+    background: linear-gradient(to left, #19abf9 0%, #19abf9 150%);
+}
+
+.container .github a{
+    margin: 20px 0 50px 0;
+    background: linear-gradient(to left, #000 0%, #000000 150%);
+}
+
+.container .github a:hover{
+    background: linear-gradient(to right, #322b2b 0%, #322b2b 150%);
+}
