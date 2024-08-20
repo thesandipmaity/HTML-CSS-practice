@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+.container{
+    margin: 50px;
+    min-height: 50vh;
+    position: relative;
+    background-color: beige;
+    border-radius: 30px;
+}
+
+.container .form{
+    margin: 20px;
+}
+
+.container h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.container .name{
+    margin: 20px;
+    display: flex;
+    column-gap: 1rem;
+    border-radius: 20px;
+}
+
+.container .firstname{
+    border-radius: 20px;
+}
+.container .lastname{
+    
+}
+
+.container .information{
+    display: flex;
+    margin: 20px;
+}
+
+.container .address{
+    margin: 20px;
+    width: 100%;
+}
+
+.container .lineaddress{
+    display: flex;
+    margin: 20px;
+}
+
+.container .document{
+    display: flex;
+    margin: 20px;
+}
+
+.container .button{
+    margin: 30px;
+    text-align: end;
+}
+
